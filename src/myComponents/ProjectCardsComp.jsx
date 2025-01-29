@@ -71,7 +71,7 @@ const ProjectCardsComp = () => {
                 'Focused on simplicity and lightweight design to ensure fast loading times',
 
             ],
-            projectLink: 'https://roch-dev.me/portfolio/',
+            projectLink: 'https://roch-dev.me/portfolio-2024/',
             projectRepo: '',
             technologyImg: [
                 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
