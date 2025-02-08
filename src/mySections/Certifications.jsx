@@ -1,9 +1,19 @@
 import React from 'react'
 import freeCodeCamp from '../assets/images/freecodecamp.png'
+import powerBi from '../assets/images/powerbi.png'
 
 const Certifications = () => {
 
     const certificates = [
+        {
+            "link": "https://learn.microsoft.com/api/credentials/share/en-us/RochRapetoh-7108/681BC40F28CAB6EB?sharingId=B58B611D7BBB5593",
+            "name": "Microsoft Power BI Data Analyst",
+            "organization": "Microsoft",
+            "imgURL": powerBi,
+            "date": "2025",
+            "topics": ["Business Intelligence", "Data Analysis", "Statistics", "Decision Making"]
+        },
+
         {
             "link": "https://freecodecamp.org/certification/Senyo_Rapetoh/back-end-development-and-apis",
             "name": "Back-End Development & APIs",
@@ -12,6 +22,7 @@ const Certifications = () => {
             "date": "2023",
             "topics": ["Back-End Development", "APIs", "NodeJS", "ExpressJS", "MongoDB"]
         },
+
         {
             "link": "https://www.credly.com/badges/ec1967ec-67ea-4d82-b27c-34fb080f82db/linked_in_profile",
             "name": "CCNA1-Introduction to Networking",
@@ -20,6 +31,7 @@ const Certifications = () => {
             "date": "2022",
             "topics": ["Networking"]
         },
+
         {
             "link": "https://www.credly.com/badges/fd64a34a-f672-4a95-a53d-0a0dd6404cb1/linked_in_profile",
             "name": "CCNA2-Routing and Switching Essentials",
@@ -28,6 +40,7 @@ const Certifications = () => {
             "date": "2023",
             "topics": ["Networking"]
         },
+
         {
             "link": "https://myworkkeys.act.org/mwk/emCertDetails.do?event=go&realm=17740116&certId=8QZW74HN0G11",
             "name": "GOLD Level National Career Readiness Certificate",
@@ -36,7 +49,6 @@ const Certifications = () => {
             "date": "2024",
             "topics": ["Problem-Solving", "Analysis skills", "Math", "Workplace"]
         },
-
     ]
 
 
@@ -46,7 +58,7 @@ const Certifications = () => {
             <h1 className='text-3xl max-md:text-2xl font-md text-center'>Certificates & Distinctions</h1>
 
             <div className="h-1/3">
-                <div className='flex flex-row gap-20 justify-center items-center w-full'>
+                <div className='flex flex-row max-md:flex-col gap-20 justify-center items-center w-full'>
                     {
                         certificates.map((certificate, index) => {
                             return (
@@ -65,7 +77,7 @@ const Certifications = () => {
                                             }
 
                                         </div>
-                                        <img className='rounded-3xl w-full h-32' src={certificate.imgURL} alt="" />
+                                        <img className='rounded-3xl w-4/5 m-auto h-32' src={certificate.imgURL} alt="" />
                                         <div className='w-3/3'>
                                             <p className='w-full text-wrap text-[15px]'>{certificate.name} ~ <span className='w-full text-wrap text-[12px] italic text-zinc-300'>{certificate.organization}</span></p>
 

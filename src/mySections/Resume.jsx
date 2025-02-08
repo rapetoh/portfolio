@@ -58,7 +58,7 @@ const Resume = () => {
             <h2 className='text-md text-[#57c6e5] font-bold font-palanquin'>Full-Stack Software Developer | Intern</h2>
             <p className='text-zinc-300'>Suisco - ITPlex Consult | May 2024 - Aug 2024</p>
             <p className='text-zinc-400'>Work: Implementation of a Biometric Identification Solution</p>
-            <div className='flex flex-row gap-2'>
+            <div className='flex flex-row flex-wrap gap-2'>
               <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
                 <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
               </div>
