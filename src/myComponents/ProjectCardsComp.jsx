@@ -6,6 +6,7 @@ import stageL2 from '../assets/images/Stage L2 project.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import portfolio2025 from '../assets/images/portfolio2025.png'
+import DA_portfolio2025 from '../assets/images/data_analyst portfolio.png'
 
 
 const ProjectCardsComp = () => {
@@ -102,6 +103,26 @@ const ProjectCardsComp = () => {
             ],
             type: [
                 'Frontend',
+            ]
+        },
+        {
+            imgURL: DA_portfolio2025,
+            projectName: 'Data Analyst Profile',
+            projectDescription: [
+                'Microsoft Certified Data Analyst Portfolio showcasing my skills and projects',
+                'Focused on user experience and simplicity to keep it lightweight',
+                'Levaraged the power of HTML, CSS and Javascript to create a dynamic effects and animations',
+            ],
+            projectLink: 'https://roch-dev.me/data_analysis/',
+            projectRepo: '',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+                'https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000',
+
+            ],
+            type: [
+                'BI & Data Analysis','Power BI'
             ]
         },
 

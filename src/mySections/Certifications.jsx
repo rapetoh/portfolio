@@ -7,7 +7,7 @@ const Certifications = () => {
     const certificates = [
         {
             "link": "https://learn.microsoft.com/api/credentials/share/en-us/RochRapetoh-7108/681BC40F28CAB6EB?sharingId=B58B611D7BBB5593",
-            "name": "Microsoft Power BI Data Analyst",
+            "name": "Microsoft Certified Power BI Data Analyst",
             "organization": "Microsoft",
             "imgURL": powerBi,
             "date": "2025",

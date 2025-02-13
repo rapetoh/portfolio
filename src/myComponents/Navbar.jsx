@@ -57,6 +57,12 @@ const Navbar = (props) => {
             label: 'Contact',
             link: '#contact',
             className: 'nav-link md:hidden'
+        },
+        {
+            id: 'nav-data_analysis',
+            label: 'Data Analysis',
+            link: 'https://roch-dev.me/data_analysis',
+            className: 'nav-link'
         }
     ];
 
