@@ -12,6 +12,7 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Certifications from "./mySections/Certifications";
+import FloatingButton from "./myComponents/MyFloatingButton";
 
 
 function App() {
@@ -74,13 +75,18 @@ function App() {
       <section className="md:my-24" id='certificates'>
         <Certifications />
       </section>
+      <section className="md:my-12" id='blog'>
+        <Blog />
+      </section> 
       <section className="md:my-12" id='contact'>
         <Contact />
       </section>
       <section>
         <Footer />
       </section>
-
+      <section>
+        <FloatingButton></FloatingButton>
+      </section>
     </>
   )
 }

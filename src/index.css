@@ -2,22 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+
+
 }
+
+/* Add this CSS to your stylesheet */
+
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.modal-overlay {
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+}
+
+
 
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
   /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #18181B;
+  background-color: #ffffff;
   /* Purple scrollbar thumb */
   border-radius: 25px;
   /* Rounded corners */
@@ -60,7 +83,7 @@ html {
   }
 
   .nav-link{
-    @apply max-md:grid rounded-lg items-center h-9 px-4 py-1 md:mx-1 max-md:my-1 font-medium text-zinc-50 hover:text-zinc-50/10 transition duration-300
+    @apply max-lg:grid rounded-lg items-center h-9 px-4 py-1 lg:mx-1 max-lg:my-1 font-medium text-zinc-50 hover:text-zinc-50/10 transition duration-300
   }
 
   .nav-link.active{

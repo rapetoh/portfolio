@@ -1,10 +1,31 @@
 import React from 'react'
 import freeCodeCamp from '../assets/images/freecodecamp.png'
 import powerBi from '../assets/images/powerbi.png'
+import meta from '../assets/images/Meta.png'
+
 
 const Certifications = () => {
 
     const certificates = [
+        
+        {
+            "link": "https://www.credly.com/badges/b7819663-6439-403b-900d-ff500c1df19a",
+            "name": "Meta Front-End Developer Professional Certificate",
+            "organization": "Meta",
+            "imgURL": meta,
+            "date": "2025",
+            "topics": ["Advanced React", "UX/UI", "JavaScript", "Version control"]
+        },
+
+        {
+            "link": "https://www.coursera.org/account/accomplishments/specialization/E9O9675LY9K2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
+            "name": "Meta Back-End Developer Professional Certificate",
+            "organization": "Meta",
+            "imgURL": meta,
+            "date": "2025",
+            "topics": ["Version Controle", "APIs", "Python", "Django", "SQL"]
+        },
+        
         {
             "link": "https://learn.microsoft.com/api/credentials/share/en-us/RochRapetoh-7108/681BC40F28CAB6EB?sharingId=B58B611D7BBB5593",
             "name": "Microsoft Certified Power BI Data Analyst",
@@ -53,12 +74,12 @@ const Certifications = () => {
 
 
     return (
-        <div id='certificates' data-aos="fade-up" data-aos-duration="1500" className='min-h-screen/2 max-lg:h-auto border-zinc-400 rounded-3xl max-lg:mx-10 flex flex-col items-center justify-center gap-7'>
+        <div id='certificates' data-aos="fade-up" data-aos-duration="1500" className='min-h-screen/2 max-lg:h-auto border-zinc-400 rounded-3xl max-lg:mx-10 flex flex-col items-center justify-center gap-7 mx-24 '>
 
             <h1 className='text-3xl max-md:text-2xl font-md text-center'>Certificates & Distinctions</h1>
 
-            <div className="h-1/3">
-                <div className='flex flex-row max-md:flex-col gap-20 justify-center items-center w-full'>
+            <div className="h-1/3 w-full overflow-x-auto overflow-y-hidden p-10">
+                <div className='flex flex-row max-md:flex-col gap-20 justify-center items-center w-fit'>
                     {
                         certificates.map((certificate, index) => {
                             return (

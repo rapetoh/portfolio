@@ -39,12 +39,7 @@ const Navbar = (props) => {
             link: '#project',
             className: 'nav-link'
         },
-        // {
-        //     id: 'nav-blog',
-        //     label: 'Blog',
-        //     link: '#blog',
-        //     className: 'nav-link'
-        // },
+        
 
         {
             id: 'nav-certificates',
@@ -52,11 +47,19 @@ const Navbar = (props) => {
             link: '#certificates',
             className: 'nav-link'
         },
+
+        {
+            id: 'nav-blog',
+            label: 'Blog',
+            link: '#blog',
+            className: 'nav-link'
+        },
+
         {
             id: 'nav-contact',
             label: 'Contact',
             link: '#contact',
-            className: 'nav-link md:hidden'
+            className: 'nav-link lg:hidden'
         },
         {
             id: 'nav-data_analysis',
@@ -67,7 +70,7 @@ const Navbar = (props) => {
     ];
 
     return (
-        <nav className={'max-md:navbar longNavbar ' + (props.navOpen ? 'active' : '')}>
+        <nav className={'max-lg:navbar longNavbar ' + (props.navOpen ? 'active' : '')}>
             {
                 navItems.map((item, key) => (
                     <span id={item.id} ref={item.ref} className={item.className} key={key}>
