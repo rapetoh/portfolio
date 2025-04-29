@@ -3,6 +3,7 @@ import idtogo from '../assets/images/ID TOGO image.png'
 import nikeClone from '../assets/images/Niky website image.png'
 import portfolio2O24 from '../assets/images/portfolio 2024 image.png'
 import stageL2 from '../assets/images/Stage L2 project.png'
+import calculator from '../assets/images/calculator.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import portfolio2025 from '../assets/images/portfolio2025.png'
@@ -83,7 +84,30 @@ const ProjectCardsComp = () => {
                 'Frontend'
             ]
         },
-        
+        {
+            imgURL: calculator,
+            projectName: 'React Calculator App',
+            projectDescription: [
+                'Developed a simple calculator app using React',
+                'Implemented basic arithmetic operations and a user-friendly interface',
+                'Focused on simplicity and lightweight design to ensure fast loading times',
+                'Utilized React components to create a modular and reusable codebase for the app',
+
+            ],
+            projectLink: 'https://github.com/rapetoh/Calculator-App-with-React',
+            projectRepo: '',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+
+            ],
+            type: [
+                'Frontend',
+                'Algorithms',
+            ]
+        },
         {
             imgURL: portfolio2025,
             projectName: 'Designed Personnal Portfolio',

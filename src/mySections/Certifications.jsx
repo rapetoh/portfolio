@@ -18,7 +18,7 @@ const Certifications = () => {
         },
 
         {
-            "link": "https://www.coursera.org/account/accomplishments/specialization/E9O9675LY9K2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
+            "link": "https://www.credly.com/earner/earned/badge/5b2a50f6-bc44-4b04-9175-ee1066b65b7c",
             "name": "Meta Back-End Developer Professional Certificate",
             "organization": "Meta",
             "imgURL": meta,

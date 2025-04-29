@@ -79,9 +79,11 @@ const Blog = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black bg-opacity-40">
           <div className="bg-zinc-900 p-8 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className='flex flex-row items-center gap-3'>
-              <img src={available} alt="" className='rounded-3xl items-center w-24' />
-              <h2 className="text-2xl font-bold mb-4 text-white">{activePost.title || activePost.name}</h2>
-              <h6 className='text-slate-500 font-semibold italic mb-4 text-sm'> ~ {activePost.date}</h6>
+              <img src={available} alt="" className='rounded-full items-center w-12' />
+              <div>
+                <h2 className="text-xl font-bold text-white">{activePost.title || activePost.name}</h2>
+                <h6 className='text-gray-500 font-semibold italic mb-4 text-sm'> ~ {activePost.date}</h6>
+              </div>
             </div>
             <br /><br />
             <p className="text-gray-300 mb-4">{activePost.content || "No content available."}</p>
