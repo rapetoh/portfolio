@@ -50,7 +50,7 @@ const Blog = () => {
           {blogPost.map((post, index) => (
             <div key={index} className="relative flex flex-col my-6 border-zinc-700 hover:bg-zinc-800 shadow-sm border rounded-2xl w-96 max-md:w-56 max-md:h-86">
               <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src={post.imgURL} alt="card-image" />
+                <img src={post.imgURL} alt="card-image" className='w-full' />
               </div>
               <div className="p-4">
                 <h6 className="mb-2 text-slate-200 text-xl font-semibold">
@@ -86,11 +86,11 @@ const Blog = () => {
               </div>
             </div>
             <br /><br />
-            <p className="text-gray-300 mb-4">{activePost.content || "No content available."}</p>
+            <p className="text-gray-300 mb-4 font-mono" dangerouslySetInnerHTML={{ __html: (activePost.content || "").replace(/\n/g, "<br />") }}></p>
             <img src={activePost.imgURL} alt="" className='w-96 h-44 m-auto rounded-3xl' />
-            <p className="text-gray-300 mb-4">{activePost.content2 || ""}</p>
+            <p className="text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: (activePost.content2 || "").replace(/\n/g, "<br />") }}></p>
             <img src={activePost.imgURL2 ? activePost.imgURL2 : ""} alt="" className={activePost.imgURL2 ? ' h-44 m-auto rounded-3xl w-96' : 'hidden'} />
-            <p className="text-gray-300 mb-4">{activePost.content3 || ""}</p>
+            <p className="text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: (activePost.content3 || "").replace(/\n/g, "<br />") }}></p>
             <img src={activePost.imgURL3 ? activePost.imgURL3 : ""} alt="" className={activePost.imgURL3 ? 'w-96 h-44 m-auto rounded-3xl' : 'hidden'} />
             <button
               onClick={() => setShowModal(false)}
