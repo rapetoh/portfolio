@@ -56,7 +56,7 @@ const Resume = () => {
         <div className=' col-start-2 row-start-2 border-l-2 border-[#57c6e5] m-[-1px] pl-7' data-aos="fade-up" data-aos-duration="1500">
           <div className=' border-2 rounded-3xl p-5 border-zinc-700 hover:bg-zinc-800 transform duration-300'>
             <h2 className='text-md text-[#57c6e5] font-bold font-palanquin'>Full-Stack Software Developer | Intern</h2>
-            <p className='text-zinc-300'>Suisco - ITPlex Consult | May 2024 - Aug 2024</p>
+            <p className='text-zinc-300'>Suisco - ITPlex Consult | Aug 2023 - Aug 2024</p>
             <p className='text-zinc-400'>Work: Implementation of a Biometric Identification Solution</p>
             <div className='flex flex-row flex-wrap gap-2'>
               <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
