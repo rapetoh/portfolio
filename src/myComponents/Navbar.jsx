@@ -15,31 +15,24 @@ const Navbar = (props) => {
             ref: lastActiveLink
         },
         {
-            id: 'nav-about',
-            label: 'About',
-            link: '#about',
-            className: 'nav-link'
-        },
-        {
-            id: 'nav-skills',
-            label: 'Skills',
-            link: '#skills',
-            className: 'nav-link'
-        },
-        {
             id: 'nav-resume',
             label: 'Resume',
             link: '#resume',
             className: 'nav-link'
         },
-
         {
             id: 'nav-project',
             label: 'Project',
             link: '#project',
             className: 'nav-link'
         },
-        
+
+        {
+            id: 'nav-skills',
+            label: 'Skills',
+            link: '#skills',
+            className: 'nav-link'
+        },
 
         {
             id: 'nav-certificates',
@@ -47,6 +40,18 @@ const Navbar = (props) => {
             link: '#certificates',
             className: 'nav-link'
         },
+
+        {
+            id: 'nav-about',
+            label: 'About',
+            link: '#about',
+            className: 'nav-link'
+        },
+
+
+
+
+
 
         {
             id: 'nav-blog',

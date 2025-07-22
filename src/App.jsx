@@ -21,13 +21,13 @@ function App() {
   const observerCallback = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        var navItem = document.getElementById('nav-'+ entry.target.id);
+        var navItem = document.getElementById('nav-' + entry.target.id);
         const otherNavItem = document.getElementsByClassName('nav-link');
-    Array.from(otherNavItem).forEach((item)=> item.classList.remove('active'));
+        Array.from(otherNavItem).forEach((item) => item.classList.remove('active'));
         navItem.classList.add('active');
       }
-      
-    
+
+
     });
   };
 
@@ -41,27 +41,21 @@ function App() {
   const observer = new IntersectionObserver(observerCallback, observerOptions);
 
   // Sélectionner les sections à observer
-  window.addEventListener('scroll', ()=>{
+  window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     sections.forEach((section) => observer.observe(section));
   })
 
 
-  
+
 
 
   return (
     <>
-    <ToastContainer />
+      <ToastContainer />
       <Header />
-      <section className="md:my-12"  id='home' data-aos="fade-up" data-aos-duration="1500">
+      <section className="md:my-12" id='home' data-aos="fade-up" data-aos-duration="1500">
         <Home />
-      </section>
-      <section className="md:my-12" id='about' data-aos="fade-up" data-aos-duration="1500">
-        <About />
-      </section>
-      <section className="md:my-12" id='skills' data-aos="fade-up" data-aos-duration="1500">
-        <Skills />
       </section>
       <section className="md:my-12" id='resume'>
         <Resume />
@@ -69,15 +63,27 @@ function App() {
       <section className="md:my-12 my-24" id='project'>
         <Project />
       </section>
-      {/* <section className="md:my-12" id='blog'>
-        <Blog />
-      </section> */}
+
+      <section className="md:my-12" id='skills' data-aos="fade-up" data-aos-duration="1500">
+        <Skills />
+      </section>
       <section className="md:my-24" id='certificates'>
         <Certifications />
       </section>
+
+      <section className="md:my-12" id='about' data-aos="fade-up" data-aos-duration="1500">
+        <About />
+      </section>
+
+
+
+      {/* <section className="md:my-12" id='blog'>
+        <Blog />
+      </section> */}
+
       <section className="md:my-12" id='blog'>
         <Blog />
-      </section> 
+      </section>
       <section className="md:my-12" id='contact'>
         <Contact />
       </section>

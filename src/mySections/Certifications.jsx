@@ -2,11 +2,21 @@ import React from 'react'
 import freeCodeCamp from '../assets/images/freecodecamp.png'
 import powerBi from '../assets/images/powerbi.png'
 import meta from '../assets/images/Meta.png'
+import AWS from '../assets/images/AWS.png'
 
 
 const Certifications = () => {
 
     const certificates = [
+
+        {
+            "link": "https://www.credly.com/badges/b2497e90-582c-4baf-ab54-f411dcd31d5b",
+            "name": "AWS Cloud Practitioner",
+            "organization": "AWS",
+            "imgURL": AWS,
+            "date": "2025",
+            "topics": ["Cloud", "Networking", "Scripting", "Security"]
+        },
         
         {
             "link": "https://www.credly.com/badges/b7819663-6439-403b-900d-ff500c1df19a",

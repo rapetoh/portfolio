@@ -3,6 +3,7 @@ import idtogo from '../assets/images/ID TOGO image.png'
 import nikeClone from '../assets/images/Niky website image.png'
 import portfolio2O24 from '../assets/images/portfolio 2024 image.png'
 import stageL2 from '../assets/images/Stage L2 project.png'
+import smartMate from '../assets/images/SmartMate.png'
 import calculator from '../assets/images/calculator.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,6 +19,31 @@ const ProjectCardsComp = () => {
     };
 
     const projects = [
+        {
+            imgURL: smartMate,
+            projectName: 'Job Description - Resume Matcher',
+            projectDescription: [
+                'Developed a smart AI-powered job description and resume matcher',
+                'Reduced manual resume–job comparison time by 85% (from ~20 min to under 3 min)',
+                'Helped 5 early testers improve alignment and rework resumes more strategically',
+                'Detected up to 70% of missing keywords in tested job ads using local logic'
+            ],
+            projectLink: 'https://yoursmartmate.vercel.app',
+            projectRepo: 'https://github.com/rapetoh/aiAssistant',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+            ],
+            type: [
+                'Frontend',
+                'Backend',
+                'APIs',
+                'AI & LLMs'
+            ]
+        },
         {
             imgURL: idtogo,
             projectName: 'Biometric & Identification Solution',
@@ -40,6 +66,27 @@ const ProjectCardsComp = () => {
                 'Frontend',
                 'Backend',
                 'APIs'
+            ]
+        },
+        {
+            imgURL: stageL2,
+            projectName: 'Visits & Parking Management System',
+            projectDescription: [
+                'Worked on Vehicle Parking and Visitor Management System',
+                'Developp a Mobile app for users and Desktop App for administration both using Flutter',
+                'Used TCP/IP concepts to connect locally all the devices in a unique and securised network',
+                'Performed Database Management with Mysql'
+            ],
+            projectLink: '#project',
+            projectRepo: '',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg'
+            ],
+            type: [
+                'Frontend',
+                'Backend',
             ]
         },
         {
@@ -150,27 +197,7 @@ const ProjectCardsComp = () => {
             ]
         },
 
-        {
-            imgURL: stageL2,
-            projectName: 'Visits & Parking Management System',
-            projectDescription: [
-                'Worked on Vehicle Parking and Visitor Management System',
-                'Developp a Mobile app for users and Desktop App for administration both using Flutter',
-                'Used TCP/IP concepts to connect locally all the devices in a unique and securised network',
-                'Performed Database Management with Mysql'
-            ],
-            projectLink: '#project',
-            projectRepo: '',
-            technologyImg: [
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg'
-            ],
-            type: [
-                'Frontend',
-                'Backend',
-            ]
-        },
+        
 
     ]
 
