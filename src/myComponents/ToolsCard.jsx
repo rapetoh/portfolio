@@ -3,11 +3,13 @@ import React from 'react'
 const ToolsCard = () => {
 
     const skillItem = [
+
         {
             imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
             label: 'HTML',
             desc: 'Web Conception'
         },
+        
         {
             imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
             label: 'CSS',
@@ -32,6 +34,11 @@ const ToolsCard = () => {
             imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
             label: 'Figma',
             desc: 'User Interface'
+        },
+        {
+            imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+            label: 'Spring Boot',
+            desc: 'Back-End Framework'
         },
         {
             imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
