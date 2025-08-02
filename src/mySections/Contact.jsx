@@ -45,16 +45,16 @@ const Contact = () => {
           <div className='flex flex-row gap-4'>
             <div>
               <label className='text-md font-palanquin text-zinc-200 ' for="name">Name :</label>
-              <input type="text" id="name" placeholder='John Doe' name="name" className='w-full p-2 mt-3 rounded-xl bg-zinc-800 text-zinc-300' />
+              <input type="text" id="name" placeholder='John Doe' name="name" className='w-full p-2 mt-3 rounded-xl bg-zinc-800 text-zinc-300'/>
             </div>
             <div>
               <label className='text-md font-palanquin text-zinc-200 ' for="mail">Email :</label>
-              <input type="text" id="mail" name="mail" placeholder='johndoe@gmail.com' className='w-full p-2 mt-3 rounded-xl bg-zinc-800 text-zinc-300' />
+              <input type="text" id="mail" name="mail" placeholder='johndoe@gmail.com' className='w-full p-2 mt-3 rounded-xl bg-zinc-800 text-zinc-300' required/>
             </div>
           </div>
           <div>
             <label className='text-md font-palanquin text-zinc-200 ' for="message">Message :</label>
-            <textarea id="message" name="message" placeholder='Type your message' className='w-full p-2 mt-3 rounded-xl bg-zinc-800 text-zinc-300' />
+            <textarea id="message" name="message" placeholder='Type your message' className='w-full p-2 mt-3 rounded-xl bg-zinc-800 text-zinc-300' required/>
           </div>
           <button type="submit" className='w-3/3 p-2 bg-[#57c6e5] rounded-xl hover:bg-zinc-400 transition duration-200 text-primary font-medium'>Submit</button>
         </form>
