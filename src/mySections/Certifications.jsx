@@ -4,6 +4,8 @@ import powerBi from '../assets/images/powerbi.png'
 import meta from '../assets/images/Meta.png'
 import AWS from '../assets/images/AWS.png'
 
+import { trackOutboundLink } from '../analytics.js';
+
 
 const Certifications = () => {
 
@@ -17,7 +19,7 @@ const Certifications = () => {
             "date": "2025",
             "topics": ["Cloud", "Networking", "Scripting", "Security"]
         },
-        
+
         {
             "link": "https://www.credly.com/badges/b7819663-6439-403b-900d-ff500c1df19a",
             "name": "Meta Front-End Developer Professional Certificate",
@@ -35,7 +37,7 @@ const Certifications = () => {
             "date": "2025",
             "topics": ["Version Controle", "APIs", "Python", "Django", "SQL"]
         },
-        
+
         {
             "link": "https://learn.microsoft.com/api/credentials/share/en-us/RochRapetoh-7108/681BC40F28CAB6EB?sharingId=B58B611D7BBB5593",
             "name": "Microsoft Certified Power BI Data Analyst",
@@ -93,7 +95,11 @@ const Certifications = () => {
                     {
                         certificates.map((certificate, index) => {
                             return (
-                                <a href={certificate.link} target="_blank" rel="noreferrer" className='hover:scale-105 transform duration-300'>
+                                <a href={certificate.link} target="_blank" rel="noreferrer" className='hover:scale-105 transform duration-300'
+
+                                    onClick={() => trackOutboundLink(certificate.link)}
+
+                                >
                                     <div key={index} className='w-56 max-w-64 border-2 rounded-3xl p-5 border-zinc-700 hover:bg-zinc-800 transform duration-300 flex flex-col  gap-2'>
                                         <div className='flex flex-row flex-wrap gap-2'>
 

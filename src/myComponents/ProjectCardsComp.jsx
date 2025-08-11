@@ -9,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import portfolio2025 from '../assets/images/portfolio2025.png'
 import DA_portfolio2025 from '../assets/images/data_analyst portfolio.png'
+import { trackOutboundLink } from '../analytics.js';
 
 
 const ProjectCardsComp = () => {
@@ -193,11 +194,11 @@ const ProjectCardsComp = () => {
 
             ],
             type: [
-                'BI & Data Analysis','Power BI'
+                'BI & Data Analysis', 'Power BI'
             ]
         },
 
-        
+
 
     ]
 
@@ -240,7 +241,12 @@ const ProjectCardsComp = () => {
                                         }
                                     </div>
                                 </div>
-                                <a href={project.projectLink} className='lg:flex lg:flex-col lg:justify-end'>
+                                <a href={project.projectLink} className='lg:flex lg:flex-col lg:justify-end'
+
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => trackOutboundLink(project.projectLink)}
+                                >
                                     {
                                         project.projectName != 'Visits & Parking Management System'
                                             ?
