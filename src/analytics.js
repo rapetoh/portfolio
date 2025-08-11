@@ -5,5 +5,7 @@ export function trackOutboundLink(label) {
       event_category: 'Outbound Link',
       event_label: label,
     });
+  } else {
+    console.warn('gtag not defined');
   }
 }
