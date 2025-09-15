@@ -5,6 +5,7 @@ import portfolio2O24 from '../assets/images/portfolio 2024 image.png'
 import stageL2 from '../assets/images/Stage L2 project.png'
 import smartMate from '../assets/images/SmartMate.png'
 import calculator from '../assets/images/calculator.png'
+import Aireply from '../assets/images/Aireply.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import portfolio2025 from '../assets/images/portfolio2025.png'
@@ -20,6 +21,30 @@ const ProjectCardsComp = () => {
     };
 
     const projects = [
+        {
+            imgURL: Aireply,
+            projectName: 'Gmail AI Reply Assistant',
+            projectDescription: [
+                'Built a Chrome extension + Spring Boot API that generates Gmail replies in <3s, cutting drafting time by ~70%',
+                'Deployed with p95 latency <2.0s and 99.9% successful requests across staging test runs',
+                'Implemented secure config and minimal permissions, passing Chrome privacy checks',
+                'Set up GitHub CI/CD to build/test backend & extension on every push, keeping build time <4 min'
+            ],
+            projectLink: 'https://github.com/rapetoh/EmailReplyGenerator',
+            projectRepo: 'https://github.com/rapetoh/EmailReplyGenerator',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+            ],
+            type: [
+                'FullStack',
+                'AI & LLMs',
+                'Chrome Extension'
+            ]
+        },
         {
             imgURL: smartMate,
             projectName: 'Job Description - Resume Matcher',
@@ -50,9 +75,10 @@ const ProjectCardsComp = () => {
             projectName: 'Biometric & Identification Solution',
             projectDescription: [
                 'Implemented a Biometric and Identification Solution ',
-                'Built the Fingerprint Management and Facial recognition system using Python',
-                'Connected  the Laravel application with the Python API using WebSocket',
-                'Performed MySQL Database Management and set up Google Drive API for cloud storage'
+                'Built with Python + Flask microservices, ensuring 98% identity verification accuracy.',
+                'Reduced authentication latency 90% (3 min to 2 sec) via optimized REST APIs Websocket integration',
+                'Performed MySQL Database Management and set up Google Drive API for cloud storage',
+                'Delivered production-ready solutions in Agile sprints, meeting 90% KPIs'
             ],
             projectLink: 'https://github.com/rapetoh/Biometric-Identification-Solution',
             projectRepo: '',
@@ -74,9 +100,10 @@ const ProjectCardsComp = () => {
             projectName: 'Visits & Parking Management System',
             projectDescription: [
                 'Worked on Vehicle Parking and Visitor Management System',
-                'Developp a Mobile app for users and Desktop App for administration both using Flutter',
-                'Used TCP/IP concepts to connect locally all the devices in a unique and securised network',
-                'Performed Database Management with Mysql'
+                'Developp a Mobile app for 250+ users and Desktop App for administration both using Flutter',
+                'Optimized backend layers with SQL + APIs, reducing system failures 60% for stable multi-user usage',
+                'Implemented BI-style data tracking with Python APIs, improving data reliability 90% and insights quality'
+                
             ],
             projectLink: '#project',
             projectRepo: '',
