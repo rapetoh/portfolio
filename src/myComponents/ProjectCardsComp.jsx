@@ -28,7 +28,7 @@ const ProjectCardsComp = () => {
                 'Built a Chrome extension + Spring Boot API that generates Gmail replies in <3s, cutting drafting time by ~70%',
                 'Deployed with p95 latency <2.0s and 99.9% successful requests across staging test runs',
                 'Implemented secure config and minimal permissions, passing Chrome privacy checks',
-                'Set up GitHub CI/CD to build/test backend & extension on every push, keeping build time <4 min'
+                'Set GitHub CI/CD to build/test backend & extension on all push, keeping build time <4 min'
             ],
             projectLink: 'https://github.com/rapetoh/EmailReplyGenerator',
             projectRepo: 'https://github.com/rapetoh/EmailReplyGenerator',
