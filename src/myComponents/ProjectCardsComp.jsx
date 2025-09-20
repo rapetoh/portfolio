@@ -30,7 +30,7 @@ const ProjectCardsComp = () => {
                 'Implemented secure config and minimal permissions, passing Chrome privacy checks',
                 'Set GitHub CI/CD to build/test backend & extension on all push, keeping build time <4 min'
             ],
-            projectLink: 'https://github.com/rapetoh/EmailReplyGenerator',
+            projectLink: 'https://chromewebstore.google.com/detail/ai-reply-by-roch/anmadpigbbdelbdolhkdolgblemgdnep?hl=en-US&utm_source=ext_sidebar',
             projectRepo: 'https://github.com/rapetoh/EmailReplyGenerator',
             technologyImg: [
                 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
