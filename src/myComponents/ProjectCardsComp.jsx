@@ -6,6 +6,7 @@ import stageL2 from '../assets/images/Stage L2 project.png'
 import smartMate from '../assets/images/SmartMate.png'
 import calculator from '../assets/images/calculator.png'
 import Aireply from '../assets/images/Aireply.png'
+import JPMorgan from '../assets/images/JPMorgan.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import portfolio2025 from '../assets/images/portfolio2025.png'
@@ -30,19 +31,38 @@ const ProjectCardsComp = () => {
                 'Implemented secure config and minimal permissions, passing Chrome privacy checks',
                 'Set GitHub CI/CD to build/test backend & extension on all push, keeping build time <4 min'
             ],
-            projectLink: 'https://chromewebstore.google.com/detail/ai-reply-by-roch/anmadpigbbdelbdolhkdolgblemgdnep?hl=en-US&utm_source=ext_sidebar',
-            projectRepo: 'https://github.com/rapetoh/EmailReplyGenerator',
+            projectLink: 'https://chromewebstore.google.com/detail/ai-reply-instant-email-re/anmadpigbbdelbdolhkdolgblemgdnep?hl=en-US&utm_source=ext_sidebar',
+            projectRepo: 'https://chromewebstore.google.com/detail/ai-reply-instant-email-re/anmadpigbbdelbdolhkdolgblemgdnep?hl=en-US&utm_source=ext_sidebar',
             technologyImg: [
                 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
                 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
                 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
                 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
             ],
             type: [
                 'FullStack',
                 'AI & LLMs',
                 'Chrome Extension'
+            ]
+        },
+        {
+            imgURL: JPMorgan,
+            projectName: 'JPMorgan Chase - Advanced Software Engineer Program - Forage Midas',
+            projectDescription: [
+                'Built Kafka pipeline processing 100% of transactions in real time with 0% loss',
+                'Integrated Incentive API, applying rewards in <200ms per call',
+                'Persisted balances with JPA/H2 ensuring 100% test accuracy',
+                'Exposed a /balance REST endpoint with <100ms response time in testing.'
+            ],
+            projectLink: 'https://github.com/rapetoh/forage-midas',
+            projectRepo: 'https://github.com/rapetoh/forage-midas',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+            ],
+            type: [
+                'Back-end',
             ]
         },
         {
@@ -160,30 +180,6 @@ const ProjectCardsComp = () => {
             ]
         },
         {
-            imgURL: calculator,
-            projectName: 'React Calculator App',
-            projectDescription: [
-                'Developed a simple calculator app using React',
-                'Implemented basic arithmetic operations and a user-friendly interface',
-                'Focused on simplicity and lightweight design to ensure fast loading times',
-                'Utilized React components to create a modular and reusable codebase for the app',
-
-            ],
-            projectLink: 'https://github.com/rapetoh/Calculator-App-with-React',
-            projectRepo: '',
-            technologyImg: [
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-
-            ],
-            type: [
-                'Frontend',
-                'Algorithms',
-            ]
-        },
-        {
             imgURL: portfolio2025,
             projectName: 'Designed Personnal Portfolio',
             projectDescription: [
@@ -206,7 +202,7 @@ const ProjectCardsComp = () => {
         },
         {
             imgURL: DA_portfolio2025,
-            projectName: 'Data Analyst Profile',
+            projectName: 'Data Analyst Live Dashboard',
             projectDescription: [
                 'Microsoft Certified Data Analyst Portfolio showcasing my skills and projects',
                 'Focused on user experience and simplicity to keep it lightweight',
