@@ -48,7 +48,7 @@ const ProjectCardsComp = () => {
         },
         {
             imgURL: JPMorgan,
-            projectName: 'JPMorgan Chase - Advanced Software Engineer Program - Forage Midas',
+            projectName: 'JPMorgan Chase - Software Engineer - Forage Midas',
             projectDescription: [
                 'Built Kafka pipeline processing 100% of transactions in real time with 0% loss',
                 'Integrated Incentive API, applying rewards in <200ms per call',
