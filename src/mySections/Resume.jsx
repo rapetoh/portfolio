@@ -94,13 +94,16 @@ const Resume = () => {
                     <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                   </div>
                   <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
-                    <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                   </div>
                   <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
                     <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
                   </div>
                   <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
-                    <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" />
+                    <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                  </div>
+                  <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
+                    <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
                   </div>
                   <div className='rounded-xl w-8 p-1 m-1 bg-zinc-400 max-lg:h-10'>
                     <img className='w-6' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
