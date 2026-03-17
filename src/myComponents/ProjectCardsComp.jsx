@@ -1,7 +1,7 @@
 import React from 'react'
+import pocketChef from '../assets/images/PocketChefImage.png'
 import idtogo from '../assets/images/ID TOGO image.png'
-import nikeClone from '../assets/images/Niky website image.png'
-import portfolio2O24 from '../assets/images/portfolio 2024 image.png'
+// import nikeClone from '../assets/images/Niky website image.png'
 import stageL2 from '../assets/images/Stage L2 project.png'
 import smartMate from '../assets/images/SmartMate.png'
 import calculator from '../assets/images/calculator.png'
@@ -9,7 +9,8 @@ import Aireply from '../assets/images/Aireply.png'
 import JPMorgan from '../assets/images/JPMorgan.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import portfolio2025 from '../assets/images/portfolio2025.png'
+// import portfolio2O24 from '../assets/images/portfolio 2024 image.png'
+// import portfolio2025 from '../assets/images/portfolio2025.png'
 import DA_portfolio2025 from '../assets/images/data_analyst portfolio.png'
 import { trackOutboundLink } from '../analytics.js';
 
@@ -22,6 +23,29 @@ const ProjectCardsComp = () => {
     };
 
     const projects = [
+        {
+            imgURL: pocketChef,
+            projectName: 'PocketChef - Meal Planner & Recipe App',
+            projectDescription: [
+                'Shipped a full-stack mobile + web app live on the App Store and pocketchef.space',
+                'Integrated OpenAI API for AI-powered recipe discovery via photo, voice, or ingredient input',
+                'Built a 14-day meal planner with automated grocery list generation',
+                'Implemented monetization with RevenueCat (free tier + $4.99/mo premium)',
+            ],
+            projectLink: 'https://pocketchef.space/',
+            projectRepo: 'https://github.com/rapetoh/PocketChef-Recipe_On_Demand',
+            technologyImg: [
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg',
+                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+            ],
+            type: [
+                'Mobile',
+                'Full Stack',
+                'AI & LLMs'
+            ]
+        },
         {
             imgURL: Aireply,
             projectName: 'Gmail AI Reply Assistant',
@@ -137,69 +161,61 @@ const ProjectCardsComp = () => {
                 'Backend',
             ]
         },
-        {
-            imgURL: nikeClone,
-            projectName: 'Nike Clone',
-            projectDescription: [
-                'Built a fully responsive Nike-themed website, ensuring compatibility across all devices and screen sizes',
-                'Leveraged Tailwind CSS utility-first classes for fast front-end development.',
-                'Utilized React components to create a modular and reusable codebase for the website',
-
-            ],
-            projectLink: 'https://roch-dev.me/Tailwind-X-Nike/',
-            projectRepo: '',
-            technologyImg: [
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-            ],
-            type: [
-                'Frontend',
-            ]
-        },
-        {
-            imgURL: portfolio2O24,
-            projectName: 'Portfolio',
-            projectDescription: [
-                'Created a responsive and visually appealing portfolio using HTML, CSS, and JavaScript',
-                'Implemented smooth animations to enhance user engagement.',
-                'Focused on simplicity and lightweight design to ensure fast loading times',
-
-            ],
-            projectLink: 'https://roch-dev.me/portfolio-2024/',
-            projectRepo: '',
-            technologyImg: [
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-            ],
-            type: [
-                'Frontend'
-            ]
-        },
-        {
-            imgURL: portfolio2025,
-            projectName: 'Designed Personnal Portfolio',
-            projectDescription: [
-                'Created a new version of my portfolio leveraging React and Tailwind CSS',
-                'Focused on user experience and simplicity to keep it lightweight',
-                'Levaraged the power of React and Javascript to create a dynamic effects and animations',
-            ],
-            projectLink: '#',
-            projectRepo: '',
-            technologyImg: [
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-                'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-            ],
-            type: [
-                'Frontend',
-            ]
-        },
+        // {
+        //     imgURL: nikeClone,
+        //     projectName: 'Nike Clone',
+        //     projectDescription: [
+        //         'Built a fully responsive Nike-themed website, ensuring compatibility across all devices and screen sizes',
+        //         'Leveraged Tailwind CSS utility-first classes for fast front-end development.',
+        //         'Utilized React components to create a modular and reusable codebase for the website',
+        //     ],
+        //     projectLink: 'https://roch-dev.me/Tailwind-X-Nike/',
+        //     projectRepo: '',
+        //     technologyImg: [
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+        //     ],
+        //     type: ['Frontend'],
+        // },
+        // {
+        //     imgURL: portfolio2O24,
+        //     projectName: 'Portfolio',
+        //     projectDescription: [
+        //         'Created a responsive and visually appealing portfolio using HTML, CSS, and JavaScript',
+        //         'Implemented smooth animations to enhance user engagement.',
+        //         'Focused on simplicity and lightweight design to ensure fast loading times',
+        //     ],
+        //     projectLink: 'https://roch-dev.me/portfolio-2024/',
+        //     projectRepo: '',
+        //     technologyImg: [
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+        //     ],
+        //     type: ['Frontend'],
+        // },
+        // {
+        //     imgURL: portfolio2025,
+        //     projectName: 'Designed Personnal Portfolio',
+        //     projectDescription: [
+        //         'Created a new version of my portfolio leveraging React and Tailwind CSS',
+        //         'Focused on user experience and simplicity to keep it lightweight',
+        //         'Levaraged the power of React and Javascript to create a dynamic effects and animations',
+        //     ],
+        //     projectLink: '#',
+        //     projectRepo: '',
+        //     technologyImg: [
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+        //         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+        //     ],
+        //     type: ['Frontend'],
+        // },
         {
             imgURL: DA_portfolio2025,
             projectName: 'Data Analyst Live Dashboard',
